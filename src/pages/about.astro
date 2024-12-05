@@ -1,0 +1,28 @@
+---
+const pageAbout = "关于我们"
+const identity ={
+	name:"冯攀",
+	age:"26",
+	hobbies:["美食","旅行","摄影"]
+}
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageAbout}</title>
+	</head>
+	<body>
+		<h1>{pageAbout}</h1>
+		<a href="/">首页</a>
+		<a href="/about">{pageAbout}</a>
+		<a href="/blog">博客</a>
+		<h2>我的信息</h2>
+		<p>我的名称：{identity.name}</p>
+		<p>我的年龄：{identity.age}</p>
+		<p>我的爱好：：{identity.hobbies}</p>
+	</body>
+</html>
